@@ -42,10 +42,10 @@ export default function GitCard() {
         <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
           Git
         </Typography>
-        <img src="src/assets/git.svg" alt="Git Logo" className={classes.logo} />
+        <img src="src/assets/svgs/git.svg" alt="Git Logo" className={classes.logo} />
       </CardContent>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.stack}>
-        Владею навыками работы с Git.
+        I am proficient in using Git.
       </Typography>
     </Card>
   );

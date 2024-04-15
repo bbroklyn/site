@@ -41,11 +41,11 @@ export default function CPlusPlus() {
         <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
           C++
         </Typography>
-        <img src="src/assets/cpp.svg" alt="C++ Logo" className={classes.logo} />
+        <img src="src/assets/svgs/cpp.svg" alt="C++ Logo" className={classes.logo} />
       </CardContent>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.stack}>
-        Базовые навыки C++.
-      </Typography>
+      Working with arrays and pointers, data structures, functions, file handling, exception handling, object-oriented programming (OOP), templates, and database connectivity.
+            </Typography>
     </Card>
   );
 }

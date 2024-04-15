@@ -1,7 +1,7 @@
-# Резюме-сайт.
+# Resume website.
 
-## Список дел (tasks):
-#### Данный список служит лишь напоминаем о том, чего еще не сделано или хочется сделать.
-- [x] Основная информация
-- [ ] Реализовать блок "Contract me" с карточками.
-- [ ] Дописать стек, который изучаю/знаю.
+## Tasks:
+#### This list serves only as a reminder of what has not yet been done or what you want to do.
+- [x] Main information.
+- [ ] Implement the "Contract me" block with cards.
+- [x] Add the technical stack that I study/know.

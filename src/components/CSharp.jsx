@@ -41,10 +41,10 @@ export default function CSharp() {
         <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
           C#
         </Typography>
-        <img src="src/assets/csharp.svg" alt="C# Logo" className={classes.logo} />
+        <img src="src/assets/svgs/csharp.svg" alt="C# Logo" className={classes.logo} />
       </CardContent>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.stack}>
-        Asynchronous programming, Windows forms, OOP.
+        Working with asynchronous programming, Windows forms, OOP.
       </Typography>
     </Card>
   );

@@ -1,4 +1,5 @@
 @import url("fonts/fonts.css");
+
 :root {
   font-family: Inter, system-ui, sans-serif;
   line-height: 1.5;
@@ -11,16 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.bubbles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1; 
+  cursor: none;
 }
 
 .app-container {
@@ -29,72 +21,55 @@
   background-color: transparent;
 }
 
-.heading {
-  font-family: Pixel;
-  font-size: 4.0em;
-  line-height: 0.4;
-}
-
-.github-link {
-  font-family: sans-serif;
-  color: #646cff;
-  text-decoration: none;
-  font-size: 50px;
-  margin-right: 10px; 
-}
-
-.github-link:last-child {
-  margin-right: 0; 
-}
-
-.github-link:hover {
-  color: #535bf2;
-}
-
-.profile-picture img {
-  width: 75px; 
-  height: 75px;
-  border-radius: 50%;
-  object-fit: cover;
-
-}
-
-.cards-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 35px;
-  gap: 20px;
-}
-
-.card {
-  background-color: #333;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.card-content {
-  font-size: 1.1em;
-}
-
-@media (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-  }
-}
-
 .bio-text {
-    font-family: Pixel;
+    font-family: Pixel, sans-serif;
     font-size: 1.5em;
-
 }
+
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: pulse 1s infinite alternate;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+#background canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
