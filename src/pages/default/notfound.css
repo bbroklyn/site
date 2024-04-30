@@ -1,38 +1,17 @@
-.goback-button {
-    font-family: Pixel, sans-serif; /* Добавляем пиксельный шрифт */
-    background-color: #2d2d2d; /* темно-серый цвет */
-    border: none;
-    color: #ffffff; /* белый цвет текста */
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 20px; /* Увеличиваем отступ сверху */
-    cursor: pointer;
-    border-radius: 5px; /* закругляем углы */
-    border: 2px solid #ffffff; /* белая обводка */
-    transition: background-color 0.3s, color 0.3s; /* добавляем плавные переходы */
-}
-
-.goback-button:hover {
-    background-color: #4d4d4d; /* чуть более темный цвет при наведении */
-}
-
 .notfound-container {
     text-align: center;
-    margin-top: 100px; /* Увеличиваем отступ сверху */
+    margin-top: 100px;
 }
 
 .notfound-text {
-    font-family: Pixel, sans-serif; /* Добавляем пиксельный шрифт */
-    font-size: 3.5em;
-    color: #ffffff; /* белый цвет текста */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* добавляем тень */
+    font-family: Pixel, sans-serif;
+    font-size: 2.8em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Выравнивание по вертикали */
-    align-items: center; /* Выравнивание по горизонтали */
-    margin-bottom: 20px;
-    margin-top: -30px; /* Сдвигаем текст немного вверх */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -60px;
 }

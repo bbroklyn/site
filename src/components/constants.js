@@ -1,4 +1,5 @@
-export const startConsolePicture = 'く__,.ヘヽ.　　　　/　,ー､ 〉\n' +
+export const startConsolePicture = '' +
+    'く__,.ヘヽ.　　　　/　,ー､ 〉\n' +
     '　　　　　＼ \', !-─‐-i　/　/´\n' +
     '　　　 　 ／｀ｰ\'　　　 L/／｀ヽ､\n' +
     '　　 　 /　 ／,　 /|　 ,　 ,　　　 \',\n' +
@@ -17,5 +18,6 @@ export const startConsolePicture = 'く__,.ヘヽ.　　　　/　,ー､ 〉\n'
     '　　　　　 　　　\'ｰ\'　　!_,.:' +
     '\n\n\n' +
     'Hello friend! I like to do open source projects, you can ask me for anything or just check my code here:\n\n' +
-    '-> discord: https://discord.com/users/1215604636938145813\n'+
-    '-> github: https://github.com/bbroklyn'
+    '➜ discord: https://discord.com/users/1215604636938145813\n' +
+    '➜ telegram: https://t.me/vladkonovalow'
+

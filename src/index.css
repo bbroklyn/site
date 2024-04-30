@@ -21,11 +21,6 @@
   background-color: transparent;
 }
 
-.bio-text {
-    font-family: Pixel, sans-serif;
-    font-size: 1.5em;
-}
-
 .cursor-dot {
   width: 10px;
   height: 10px;
@@ -73,3 +68,25 @@
   position: absolute;
 }
 
+
+
+.goback {
+  font-family: Pixel, sans-serif;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.goback:hover {
+  background-color: #4d4d4d;
+}

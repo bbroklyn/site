@@ -26,6 +26,8 @@ const useStyles = makeStyles({
   stack: {
     textAlign: 'center',
     marginTop: '10px',
+    marginLeft: '10px',
+    marginRight: '10px',
   },
 });
 
@@ -38,7 +40,7 @@ export default function KotlinTechStackCard() {
         <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
           Kotlin
         </Typography>
-        <img src="src/assets/images/kotlinLogo.png" alt="Kotlin Logo" className={classes.logo} />
+        <img src="/img/kotlinLogo.png" alt="Kotlin Logo" className={classes.logo} />
         <Typography variant="body2" color="textSecondary" component="p" className={classes.stack}>
           OOP, Serialization, Telegram Bot, Room, Xodus.
         </Typography>

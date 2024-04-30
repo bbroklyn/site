@@ -21,14 +21,16 @@ const useStyles = makeStyles({
     textAlign: 'center',
   },
   logo: {
-    width: '210px', 
+    width: '80px',
     display: 'block', 
     margin: '0 auto', 
   },
   stack: {
     marginTop: 'auto', 
     textAlign: 'center',
-    marginBottom: '50px', 
+    marginBottom: '50px',
+    marginLeft: '10px',
+    marginRight: '10px',
   },
 });
 
@@ -41,7 +43,7 @@ export default function CPlusPlus() {
         <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
           C++
         </Typography>
-        <img src="src/assets/svgs/cpp.svg" alt="C++ Logo" className={classes.logo} />
+        <img src="/img/cpp.png" alt="C++ Logo" className={classes.logo} />
       </CardContent>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.stack}>
       Working with arrays and pointers, data structures, functions, file handling, exception handling, object-oriented programming (OOP), templates, and database connectivity.
