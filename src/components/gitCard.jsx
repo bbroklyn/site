@@ -2,34 +2,35 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
 const useStyles = makeStyles({
   root: {
-    position: 'relative', 
+    position: 'relative',
     maxWidth: 300,
     height: 300,
     width: 300,
     backgroundColor: '#F7F7F7',
     border: '2px solid #AAAAAA',
-    borderRadius: '15px', 
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.55)', 
-    marginBottom: '20px', 
+    borderRadius: '15px',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.55)',
+    marginBottom: '20px',
     display: 'flex',
-    flexDirection: 'column', 
+    flexDirection: 'column',
   },
   title: {
-    color: '#333333', 
+    color: '#333333',
     textAlign: 'center',
   },
   logo: {
-    width: '100px', 
-    display: 'block', 
-    margin: '0 auto', 
+    width: '100px',
+    display: 'block',
+    margin: '0 auto',
   },
   stack: {
-    marginTop: 'auto', 
+    marginTop: 'auto',
     textAlign: 'center',
-    marginBottom: '50px', 
+    marginBottom: '50px',
+    marginLeft: '10px',
+    marginRight: '10px',
   },
 });
 
@@ -42,7 +43,7 @@ export default function GitCard() {
         <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
           Git
         </Typography>
-        <img src="src/assets/svgs/git.svg" alt="Git Logo" className={classes.logo} />
+        <img src="/svgs/git.svg" alt="Git Logo" className={classes.logo} />
       </CardContent>
       <Typography variant="body2" color="textSecondary" component="p" className={classes.stack}>
         I am proficient in using Git.

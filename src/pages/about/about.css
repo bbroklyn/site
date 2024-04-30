@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.about {
+    font-family: Pixel, sans-serif;
+    font-size: 1.8em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 600px; /* Ограничиваем ширину текста */
+    margin-bottom: 10px;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        font-size: 1.5em;
+    }
+}
+
+.highlight {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #dcdcdc;
+}

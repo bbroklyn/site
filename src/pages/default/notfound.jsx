@@ -1,7 +1,8 @@
-// home.jsx
+import { Link } from 'react-router-dom';
+//
 import ParticlesComponent from "@/components/background.jsx";
 import './notfound.css'
-import { Link } from 'react-router-dom';
+import '@/index.css'
 
 function NotFound() {
     return (
@@ -12,7 +13,7 @@ function NotFound() {
                     Page not found!
                 </p>
                 <Link to="/" >
-                    <button className="goback-button">
+                    <button className="goback">
                         GO BACK!
                     </button>
                 </Link>

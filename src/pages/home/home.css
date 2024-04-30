@@ -5,17 +5,28 @@
     object-fit: cover;
 
 }
-.heading {
+.headingHome {
     font-family: Pixel, sans-serif;
     font-size: 5.0em;
-    line-height: 1.2;
+    line-height: 1;
     text-align: center;
+    margin-bottom: 5px;
 }
 
-.bio-text {
+@media screen and (max-width: 768px) {
+    .headingHome {
+        font-size: 3.5em;
+    }
+}
+
+
+.about-text {
     font-family: Pixel, sans-serif;
     font-size: 1.5em;
+    text-align: center;
+    margin-top: 0;
 }
+
 .social-link {
     font-family: sans-serif;
     color: #646cff;
@@ -30,4 +41,20 @@
 
 .social-link:hover {
     color: #535bf2;
+}
+.homeButtons {
+    font-family: Pixel, sans-serif;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
 }
