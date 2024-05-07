@@ -1,6 +1,12 @@
-const ProfilePicture = () => {
+import * as React from 'react';
+
+interface ProfilePictureProps {
+    className?: string;
+}
+
+const ProfilePicture: React.FC<ProfilePictureProps> = ({ className }: ProfilePictureProps) => {
   return (
-    <div style={{
+    <div className={className} style={{
       width: '250px', 
       height: '250px',
       borderRadius: '50%',

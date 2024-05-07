@@ -3,7 +3,7 @@ import './about.css';
 import { Link } from "react-router-dom";
 import '@/index.css';
 
-function About() {
+const About = () => {
     return (
             <div className="content">
                 <ParticlesComponent id="background" />

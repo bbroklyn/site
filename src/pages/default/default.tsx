@@ -1,10 +1,11 @@
+import * as React from "react";
 import { Link } from 'react-router-dom';
 //
-import ParticlesComponent from "@/components/background.jsx";
-import './notfound.css'
+import ParticlesComponent from "@/components/background.tsx";
+import './default.css'
 import '@/index.css'
 
-function NotFound() {
+const Default: React.FC = () => {
     return (
         <div className="notfound-container">
             <ParticlesComponent id="background"/>
@@ -22,4 +23,4 @@ function NotFound() {
     );
 }
 
-export default NotFound;
+export default Default

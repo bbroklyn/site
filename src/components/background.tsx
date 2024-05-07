@@ -4,7 +4,7 @@ import { loadSlim } from "@tsparticles/slim";
 
 
 
-const ParticlesComponent = (props) => {
+const ParticlesComponent = (props: { id: string | undefined; }) => {
 
     const [, setInit] = useState(false);
     useEffect(() => {
@@ -15,7 +15,7 @@ const ParticlesComponent = (props) => {
         });
     }, []);
 
-    const particlesLoaded = (container) => {
+    const particlesLoaded = (container: never) => {
         console.log(container);
     };
 
@@ -92,7 +92,7 @@ const ParticlesComponent = (props) => {
     );
 
 
-    // eslint-disable-next-line react/prop-types
+    // @ts-expect-error options are not usable at this case
     return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 

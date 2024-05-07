@@ -1,17 +1,18 @@
-import ParticlesComponent from "@/components/background.jsx";
-import ProfilePicture from "@/components/ProfilePicture.jsx";
+import * as React from 'react';
+import ParticlesComponent from "@/components/background.tsx";
 import { Link } from "react-router-dom";
-//
 import { FaDiscord, FaGithub, FaTelegram } from "react-icons/fa";
 import './home.css';
-import { startConsolePicture } from "@/components/constants.js";
+import { startConsolePicture } from "@/components/constants.ts";
+import ProfilePicture from '@/components/ProfilePicture';
 
-function Home() {
+const Home: React.FC = () => {
     console.log(startConsolePicture);
     return (
         <div className="app-container">
-            <ParticlesComponent id="background"/>
-            <ProfilePicture className="profile-picture"/>
+            <ParticlesComponent id="background" />
+            <ProfilePicture className="profile-picture" />
+            
             <h1 className="headingHome">Vladislav \broklyn\ Konovalow</h1>
             <div>
                 <p className="about-text">

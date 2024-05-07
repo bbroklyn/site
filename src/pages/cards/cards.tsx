@@ -1,15 +1,16 @@
+import * as React from 'react'
+import {Link} from "react-router-dom";
 //
-import ParticlesComponent from "@/components/background.jsx";
-import KotlinTechStackCard from "@/components/KotlinCard.jsx";
-import CSharp from "@/components/CSharp.jsx";
-import CPlusPlus from "@/components/Cpp.jsx";
-import GitCard from "@/components/gitCard.jsx";
+import ParticlesComponent from "@/components/background.tsx";
+import KotlinTechStackCard from '@/components/KotlinCard.tsx';
+import CSharp from "@/components/CSharp.tsx";
+import CPlusPlus from "@/components/Cpp.tsx";
+import GitCard from "@/components/gitCard.tsx";
 import './cards.css'
 import '@/index.css'
-import {Link} from "react-router-dom";
-import PostgresCard from "@/components/PostgresCard.jsx";
+import PostgresCard from "@/components/PostgresCard.tsx";
 
-const CardsPage = () => {
+const CardsPage: React.FC = () => {
     return (
         <div>
             <h1 className="heading">My knowledge</h1>
@@ -30,4 +31,4 @@ const CardsPage = () => {
     );
 }
 
-export default CardsPage;
+export default CardsPage
