@@ -1,92 +1,90 @@
-@import url("fonts/fonts.css");
+@import url('components/fonts/fonts.css');
 
 :root {
-  font-family: Inter, system-ui, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	font-family: Inter, system-ui, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
 
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  cursor: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	cursor: none;
 }
 
 .app-container {
-  text-align: center;
-  margin-top: 25px;
-  background-color: transparent;
+	text-align: center;
+	margin-top: 25px;
+	background-color: transparent;
 }
 
 .cursor-dot {
-  width: 10px;
-  height: 10px;
-  background-color: white;
+	width: 10px;
+	height: 10px;
+	background-color: white;
 }
 
 .cursor-outline {
-  width: 30px;
-  height: 30px;
-  border: 2px solid hsla(0, 0%, 100%, 0.5);
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  animation: pulse 1s infinite alternate;
+	width: 30px;
+	height: 30px;
+	border: 2px solid hsla(0, 0%, 100%, 0.5);
+	border-radius: 50%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	animation: pulse 1s infinite alternate;
 }
 
 .cursor-dot,
 .cursor-outline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 1;
-  pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	z-index: 1;
+	pointer-events: none;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0;
+	}
 }
 
 #background canvas {
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
 
-
-
 .goback {
-  font-family: Pixel, sans-serif;
-  background-color: #2d2d2d;
-  color: #ffffff;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: 2px solid #ffffff;
-  transition: background-color 0.3s, color 0.3s;
+	font-family: Pixel, sans-serif;
+	background-color: #2d2d2d;
+	color: #ffffff;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 2px solid #ffffff;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .goback:hover {
-  background-color: #4d4d4d;
+	background-color: #4d4d4d;
 }
