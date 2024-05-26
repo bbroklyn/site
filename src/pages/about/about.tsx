@@ -1,6 +1,6 @@
-import '@/index.css'
 import ParticlesComponent from '@/utils/background.js'
 import { Link } from 'react-router-dom'
+import '../../index.css'
 import './about.css'
 
 const About = () => {
