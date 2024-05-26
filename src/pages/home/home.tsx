@@ -1,5 +1,5 @@
-import ParticlesComponent from '@/utils/background'
 import ProfilePicture from '@/utils/ProfilePicture'
+import ParticlesComponent from '@/utils/background'
 import * as React from 'react'
 import { FaDiscord, FaGithub, FaTelegram } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
@@ -48,6 +48,9 @@ const Home: React.FC = () => {
 			</Link>
 			<Link to='/about'>
 				<button className='homeButtons'>About author</button>
+			</Link>
+			<Link to='/send'>
+				<button className='homeButtons'>Contact the author</button>
 			</Link>
 		</div>
 	)
