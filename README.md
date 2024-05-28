@@ -7,4 +7,5 @@
 - [x] Main information.
 - [x] Implement the "Contract me" block with cards.
 - [x] Add the technical stack that I study/know.
-- [ ] Form for sending messages to the author.
+- [x] Form for sending messages to the author.
+- [ ] Integration with github **&** any other platforms.
