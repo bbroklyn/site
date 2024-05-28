@@ -1,11 +1,16 @@
 import ProfilePicture from '@/utils/ProfilePicture'
 import ParticlesComponent from '@/utils/background'
+import { startConsolePicture } from '@/utils/constants'
 import * as React from 'react'
 import { FaDiscord, FaGithub, FaTelegram } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import './home.css'
 
 const Home: React.FC = () => {
+	React.useEffect(() => {
+		console.log(startConsolePicture)
+	}, [])
+
 	return (
 		<div className='app-container'>
 			<ParticlesComponent id='background' />
