@@ -5,6 +5,8 @@ import CSharp from '@/components/cards/CSharp.tsx'
 import CPlusPlus from '@/components/cards/Cpp'
 import KotlinTechStackCard from '@/components/cards/KotlinCard'
 import PostgresCard from '@/components/cards/PostgresCard'
+import RustCard from '@/components/cards/RustCard'
+import TypeScriptCard from '@/components/cards/TypeScriptCard'
 import GitCard from '@/components/cards/gitCard'
 import '@/index.css'
 import ParticlesComponent from '@/utils/background'
@@ -21,6 +23,10 @@ const CardsPage: React.FC = () => {
 				<CPlusPlus />
 				<GitCard />
 				<PostgresCard />
+			</div>
+			<div className='cards-container'>
+				<RustCard />
+				<TypeScriptCard />
 			</div>
 			<Link to='/'>
 				<button className='goback'>GO BACK!</button>

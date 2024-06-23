@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 		textAlign: 'center',
 	},
 	logo: {
-		width: '150px',
+		width: '125px',
 		display: 'block',
 		margin: '0 auto',
 	},
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 	},
 })
 
-const KotlinTechStackCard: React.FC = () => {
+const TypeScriptCard: React.FC = () => {
 	const classes = useStyles()
 
 	return (
@@ -44,11 +44,11 @@ const KotlinTechStackCard: React.FC = () => {
 					component='h2'
 					className={classes.title}
 				>
-					Kotlin
+					TypeScript
 				</Typography>
 				<img
-					src='/img/kotlinLogo.png'
-					alt='Kotlin Logo'
+					src='/svgs/typescript.svg'
+					alt='TS Logo'
 					className={classes.logo}
 				/>
 				<Typography
@@ -57,12 +57,11 @@ const KotlinTechStackCard: React.FC = () => {
 					component='p'
 					className={classes.stack}
 				>
-					I use Kotlin on a regular basis. I have experience in backend, web and
-					in mobile development. I have my own portfolio of projects.{' '}
+					Using TypeScript for Frontend
 				</Typography>
 			</CardContent>
 		</Card>
 	)
 }
 
-export default KotlinTechStackCard
+export default TypeScriptCard

@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 		textAlign: 'center',
 	},
 	logo: {
-		width: '150px',
+		width: '125px',
 		display: 'block',
 		margin: '0 auto',
 	},
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 	},
 })
 
-const KotlinTechStackCard: React.FC = () => {
+const RustCard: React.FC = () => {
 	const classes = useStyles()
 
 	return (
@@ -44,25 +44,20 @@ const KotlinTechStackCard: React.FC = () => {
 					component='h2'
 					className={classes.title}
 				>
-					Kotlin
+					Rust
 				</Typography>
-				<img
-					src='/img/kotlinLogo.png'
-					alt='Kotlin Logo'
-					className={classes.logo}
-				/>
+				<img src='/svgs/rust.svg' alt='Rust Logo' className={classes.logo} />
 				<Typography
 					variant='body2'
 					color='textSecondary'
 					component='p'
 					className={classes.stack}
 				>
-					I use Kotlin on a regular basis. I have experience in backend, web and
-					in mobile development. I have my own portfolio of projects.{' '}
+					Starting to learn Rust.
 				</Typography>
 			</CardContent>
 		</Card>
 	)
 }
 
-export default KotlinTechStackCard
+export default RustCard
